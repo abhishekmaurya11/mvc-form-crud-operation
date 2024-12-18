@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <p>Applicant Registration Form</p>
+
+    <h1>Personal Details</h1>
+    <div class="box-1 margin">
+        <div class="sub-box-1 padding">
+            <span >Name <input type="text" class="name"></span>
+            <span >Fathers Name <input type="text" class="fname"></span>
+            <span >Date Of Birth <input type="date" class="dob"></span>
+        </div>
+
+        <div class="sub-box-2 ">
+            <span>Religion <select name="Religion" class="Religion">
+                    <option value="A">A</option>
+                    <option value="B">B</option>
+                    <option value="C">C</option>
+                    <option value="D">D</option>
+                </select></span>
+            <span>Caste Category <select name="Caste" class="Caste">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select></span>
+            <span>Gender <input type="radio" id="m" class="m" name="Gender" value="Male">
+                <label for="m">Male</label>
+                <input type="radio" id="f" class="f" name="Gender" value="Female">
+                <label for="f">Female</label></span>
+        </div>
+    </div>
+
+    <!-- /////////////////////////////////////// -->
+
+    <h1>Address</h1>
+    <div class="box-2 margin">
+        <div class="sub-box-1 padding">
+            <span>Country <select name="Country" class="Country">
+                    <option value="Country 1">Country 1</option>
+                    <option value="Country 2">Country 2</option>
+                </select></span>
+            <span>State <select name="State" class="State">
+                    <option value="State 1">State 1</option>
+                    <option value="State 2">State 2</option>
+                </select></span>
+            <span>District <select name="District" class="District">
+                    <option value="District 1">District 1</option>
+                    <option value="District 2">District 2</option>
+                </select></span>
+        </div>
+
+        <div class="sub-box-2 ">
+            <span>Pin Code <input type="text" class="pin"></span>
+            <span>Address <input type="text" class="addres"></span>
+        </div>
+    </div>
+
+    <!-- ////////////////////////////////// -->
+
+    <h1>Education</h1>
+    <div class="box-3 margin">
+        <div class="sub-box-1 padding">
+            <span><input type="checkbox" id="education1" class="education1" name="education1" value="High School">
+                <label for="education1">High School</label></span>
+            <span><input type="checkbox" id="education2" class="education2" name="education2" value="Intermidate">
+                <label for="education2">Intermidiate</label></span>
+            <span><input type="checkbox" id="education3" class="education3" name="education3" value="Graduation">
+                <label for="education3">Graduation</label></span>
+
+        </div>
+
+        <div class="sub-box-2 ">
+            <span><input type="checkbox" id="education4" class="education4" name="education4" value="Post Graduation">
+                <label for="education4">Post Graduation</label></span>
+        </div>
+    </div>
+
+    <!-- //////////////////////////////////////// -->
+
+    <!-- <h1>Hobbies</h1>
+    <div class="box-4 margin">
+        <div class="sub-box-1 padding">
+            <span class="playing-g">Playing Games </span><button class="pg">Add</button>
+            <span class="watch-movies">Watch Movies </span><button class="watch">Add</button>
+        </div>
+    </div> -->
+
+    <!-- /////////////////////////////////// -->
+
+    <div class="box-5 margin">
+        <div class="sub-box-1 padding">
+            <span>Photo <input type="file" class="myfile-photo" name="myfile"></span>
+            <span>Signature <input type="file" class="myfile-signature" name="myfile"></span>
+        </div>
+    </div>
+
+    <button class="submit-form margin">Submit Form</button>
+    <button class="submit-form margin edit-save">Edit And Save Form</button>
+
+    <hr>
+
+    <!-- ///////////////////////////////////////// -->
+
+    <h2>View Report</h2>
+
+    <div class="report-list">
+        <!-- <span class="reportt">Application 1 <button>Edit</button> <button class="del">Delete</button> <button class="view"
+                data-no=${num}>View</button></span>-->
+    </div>
+
+    <!-- /////////////////////////////////////////
+    ////////////////////////////////////////
+    //////////////////////////////////////// -->
+
+    <div class="view-report">
+        <div class="cross">
+            <!-- <span class="cfrm">Close Form</span> -->
+            <!-- <p class="detail"></p> -->
+        </div>
+    </div>
+
+</body>
+<script type="module" src="controller.js"></script>
+
+</html>
